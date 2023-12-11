@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgba(0,0,0,0.65);
+    background-image: url('./homepage_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-blend-mode: color-burn;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-container {
+    width: 750px;
+    max-width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    height: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url('./SIH.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vertical-line {
+    height: 50px;
+    width: 1px;
+    background-color: white;
+}
+
+.desc-container {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    animation: expand-homepage-container forwards 1s;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.navbar > li {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+.navbar > li:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.about-container {
+    color: rgba(255,255,255,0.25) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.popup-container {
+    position: absolute;
+    width: 700px;
+    max-width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 1rem;
+    color: gray;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.popup-heading {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.popup-close {
+    border-radius: 50%;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.form-input-contianer > input{
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.form-input-contianer > button {
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.popup-bg-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+}
+
+.form-input-container > button:hover {
+    background-color: rgba(0,0,0,0.75);
+}
+
+@keyframes expand-homepage-container {
+    0% {
+        height: 1px;
+        padding: 0;
+    }
+
+    20% {
+        height: 1px;
+    }
+
+    80% {
+        padding: 1rem;
+    }
+
+    100% {
+        height: auto;
+        padding: 1rem;
+    }
+}

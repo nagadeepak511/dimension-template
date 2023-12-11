@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotOrNot</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="home-container">
+        <div class="logo-container"></div>
+        <div class="vertical-line"></div>
+        <div class="desc-container">
+            <h1>Fake socialmedia Detection</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis sequi fugiat. Aspernatur veritatis ducimus, nobis error unde aperiam, mollitia placeat voluptatum animi dicta, culpa laborum exercitationem saepe fugit natus.</p>
+        </div>
+        <div class="vertical-line"></div>
+        <ul class="navbar">
+            <li onclick="openpopup('popup1')">Twitter</li>
+            <li onclick="openpopup('popup2')">Facebook</li>
+            <li onclick="openpopup('popup3')">Instagram</li>
+        </ul>
+        <div class="about-container">
+            <p>&copy; Algorithm angels: </p>
+            <div><a href="" id="git-link"><img src="./github.png" alt=""></a></div>
+        </div>
+    </div>
+    <div class="popup-container" id="popup1">
+        <button class="popup-close" onclick="closepopup('popup1')">&times;</button>
+        <h1 class="popup-heading">Twitter</h1>
+        <div class="popup-bg-container" style="background-image:url('./twitter.png')"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam facere tenetur error impedit libero, sapiente ullam reprehenderit reiciendis corporis esse, a temporibus ratione voluptatem maiores magnam totam quo. Debitis?</p>
+        <div class="form-input-contianer">
+            <input type="text">
+            <button>Get user</button>
+            <button>Get followers</button>
+        </div>
+    </div>
+    <div class="popup-container" id="popup2">
+        <button class="popup-close" onclick="closepopup('popup2')">&times;</button>
+        <h1 class="popup-heading">Facebook</h1>
+        <div class="popup-bg-container" style="background-image:url('./facebook.jpg')"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam facere tenetur error impedit libero, sapiente ullam reprehenderit reiciendis corporis esse, a temporibus ratione voluptatem maiores magnam totam quo. Debitis?</p>
+        <div class="form-input-contianer">
+            <input type="text">
+            <button>Get user</button>
+            <button>Get followers</button>
+        </div>
+    </div>
+    <div class="popup-container" id="popup3">
+        <button class="popup-close" onclick="closepopup('popup3')">&times;</button>
+        <h1 class="popup-heading">Instagram</h1>
+        <div class="popup-bg-container" style="background-image:url('./instagram.webp')"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam facere tenetur error impedit libero, sapiente ullam reprehenderit reiciendis corporis esse, a temporibus ratione voluptatem maiores magnam totam quo. Debitis?</p>
+        <div class="form-input-contianer">
+            <input type="text">
+            <button>Get user</button>
+            <button>Get followers</button>
+        </div>
+    </div>
+</body>
+</html>
